@@ -1,0 +1,120 @@
+<!-- famball2015.html -->
+
+<!-- proposed famball2015 db "schema"
+
+Weeks
+  week
+  	weekNumber
+    Matchups
+    	matchup1
+        Teams
+        	team1
+          	teamName
+          	displayName
+          	logo
+          	wins
+          	losses
+        	team2
+          	(same as team1)
+      	startTime
+      	isOver
+      	location (team.teamName)
+      matchup2
+        (same as matchup1)
+
+-->
+
+<!-- db insert team terminal code format (meteor mongo)
+
+db.teams.insert({ teamName: "NE", displayName: "New England Patriots", logo: "", wins: 10, losses: 0 });
+db.teams.insert({ teamName: "BUF", displayName: "Buffalo Bills", logo: "", wins: 5, losses: 5 });
+
+-->
+
+<!-- db insert week terminal code format (meteor mongo)
+
+db.weeks.insert({ weekNumber: "1" });
+db.weeks.insert({ weekNumber: "2" });
+db.weeks.insert({ weekNumber: "3" });
+db.weeks.insert({ weekNumber: "4" });
+db.weeks.insert({ weekNumber: "5" });
+db.weeks.insert({ weekNumber: "6" });
+db.weeks.insert({ weekNumber: "7" });
+db.weeks.insert({ weekNumber: "8" });
+db.weeks.insert({ weekNumber: "9" });
+db.weeks.insert({ weekNumber: "10" });
+db.weeks.insert({ weekNumber: "11" });
+db.weeks.insert({ weekNumber: "12" });
+db.weeks.insert({ weekNumber: "13" });
+db.weeks.insert({ weekNumber: "14" });
+db.weeks.insert({ weekNumber: "15" });
+db.weeks.insert({ weekNumber: "16" });
+db.weeks.insert({ weekNumber: "17" });
+
+-->
+
+<head>
+  <title>Famball 2015</title>
+</head>
+
+<body>
+	<div id="render-target"></div>
+</body>
+
+<!--body>
+	<div class="title-bar">
+		<h1>Famball 2015</h1>
+	</div>
+	<div class="top-bar">
+		<div class="top-bar-left">
+	  	<label>{{> loginButtons}}</label>
+	  </div>
+		<div class="top-bar-right">
+			<label>{{> currentStandingsModal}}</label>
+		</div>
+	  <div>
+	  	{{> weeksAccordion}}
+	  </div>
+	</div>
+</body>
+
+<template name="weeksAccordion">
+	<dl id="weeksAccordion" data-accordion>
+  	{{#each weeks}}
+  		{{> week}}
+  	{{/each}}
+	</dl>
+</template>
+
+<template name="week">
+  <dd class="accordion-navigation">
+    <a href="#{{weekNumber}}">Week {{weekNumber}}</a>
+    <div id="{{weekNumber}}" class="content">
+    	<div>{{homeTeam}}</div>
+    	<div>{{awayTeam}}</div>
+    </div>
+  </dd>
+</template>
+
+<template name="currentStandingsModal">
+  <p><a data-reveal-id="currentStandingsModal">Current Standings</a></p>
+
+  <div class="reveal" id="currentStandingsModal" data-animation-in="fade-in" data-animation-out="fade-out">
+    <h1>Awesome. I Have It.</h1>
+    <p class="lead">Your couch. It is mine.</p>
+    <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</template>
+
+<template name="matchup">
+	<li>
+		<div class="range-slider" data-slider>
+		  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+		  <span class="range-slider-active-segment"></span>
+		  <input type="hidden">
+		</div>
+	</li>
+</template-->
