@@ -41,7 +41,7 @@ Matchup = React.createClass({
 	        <img src="http://placehold.it/50x50/f2f2f2" />
 	      </span>
     	*/}
-    	<p>Test</p>
+    	<p>Test matchup</p>
       </div>
 		);
 	}
