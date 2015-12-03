@@ -1,0 +1,8 @@
+# Default Meteor build and local packages
+.meteor/local
+
+# Meteor settings file
+settings.json
+
+# Meteor build output files
+*.tar.gz
